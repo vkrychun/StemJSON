@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question about the specification
+    url: https://github.com/vkrychun/StemJSON/discussions/categories/q-a
+    about: For questions about how a construct is meant to work, use Discussions → Q&A.
+  - name: Propose a future-revision feature (v1.1+)
+    url: https://github.com/vkrychun/StemJSON/discussions/categories/proposals
+    about: Long-form RFC-style proposals belong in Discussions → Proposals before they become an Issue.
+  - name: Questions about the StemRuntimeSDK implementation
+    url: https://github.com/vkrychun/stem-runtime-swift
+    about: SDK bugs, feature requests, and integration questions live in the runtime repository, not here.
+  - name: Commercial licensing and trademark enquiries
+    url: mailto:vkrychun@stemjson.com
+    about: Contact the specification author directly.

@@ -1,0 +1,56 @@
+name: Spec clarification
+description: Flag ambiguous wording, apparent contradictions, or underspecified behaviour in the current specification.
+title: "[Clarification] "
+labels: ["spec-clarification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when the spec as written leaves genuine room for doubt — two implementations could legitimately diverge because the spec doesn't say which is correct.
+
+        For typos, use the *Typo / editorial fix* template instead. For missing functionality, use *Improvement suggestion*.
+  - type: input
+    id: section
+    attributes:
+      label: Specification section
+      description: The section where the issue appears (e.g., `§8.6` Built-in Functions, `§4.5` link component).
+      placeholder: "§8.6"
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Which edition
+      description: "`spec/v1.0.md` (full) or `spec/v1.0-ai.md` (LLM), or both."
+      placeholder: "spec/v1.0.md"
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: Exact text you find unclear
+      description: Quote the sentence(s) verbatim.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is ambiguous or contradictory
+      description: Describe the two (or more) readings, or the contradiction.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Implementation impact
+      description: How does the ambiguity affect an implementer? What decisions would they have to make that the spec should instead specify?
+    validations:
+      required: false
+  - type: textarea
+    id: proposed-resolution
+    attributes:
+      label: Proposed resolution (optional)
+      description: Your suggestion for what the spec should say to remove the ambiguity.
+    validations:
+      required: false

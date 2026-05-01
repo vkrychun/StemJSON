@@ -1,0 +1,158 @@
+StemJSON Specification License
+==============================
+
+Copyright (c) 2025-2026 Vasyl Krychun. All rights reserved.
+
+Vasyl Krychun is the originator and author of the StemJSON specification
+and the inventor of the declarative concepts embodied in it.
+
+
+1. SPECIFICATION LICENSE
+
+The StemJSON specification documents (all files in the spec/ directory) are
+made available under the Open Web Foundation Agreement Version 1.0
+("OWFa 1.0"), subject to the additional attribution requirement set out
+below in Section 1.5.
+
+You can review the OWFa 1.0 at:
+https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0
+
+Under the OWFa 1.0, the specification author grants any implementer a
+royalty-free, worldwide, non-exclusive, non-sublicensable copyright
+licence and a royalty-free, worldwide, non-exclusive, non-sublicensable
+patent licence (limited to Necessary Claims as defined in the OWFa 1.0),
+subject to the terms of the OWFa 1.0.
+
+In plain language, this means:
+
+  1.1 You MAY freely implement the StemJSON specification in any programming
+      language, on any platform, for any purpose (commercial or non-commercial).
+
+  1.2 You MAY create parsers, validators, renderers, code generators,
+      editors, and any other tooling that reads, writes, or processes
+      StemJSON.
+
+  1.3 You MUST retain this copyright notice and this licence in any
+      redistribution of the specification documents.
+
+  1.4 The implementation rights in this Section 1 are granted under the
+      OWFa 1.0. The OWFa 1.0 does not grant any trademark rights; see
+      Section 3 and TRADEMARK_POLICY.md.
+
+  1.5 Additional attribution requirement. As an additional condition that
+      applies alongside the OWFa 1.0 but does not restrict the core right
+      to implement the specification, you MUST include the following
+      attribution in a reasonably discoverable location within any product
+      or project that implements the StemJSON specification (e.g.,
+      documentation, about screen, README, licence file, or third-party
+      notices):
+
+          "StemJSON specification created by Vasyl Krychun
+           https://stemjson.com"
+
+      If you believe this additional requirement is incompatible with the
+      unmodified OWFa 1.0 terms for a particular jurisdiction or use, the
+      OWFa 1.0 terms prevail to the extent of that incompatibility, and
+      this attribution requirement is deemed severed for that use only.
+
+
+2. STEMRUNTIMESDK (SEPARATE LICENSE)
+
+The StemRuntimeSDK — the official runtime engine for Apple platforms — is
+a separate product governed by its own End-User License Agreement (EULA).
+The StemRuntimeSDK is NOT covered by this licence.
+
+The StemRuntimeSDK EULA is published at
+https://github.com/vkrychun/stem-runtime-swift/blob/main/LICENSE
+(the file named LICENSE in the stem-runtime-swift repository). A
+summary is available at https://stemjson.com/sdk/license when that
+page is live.
+
+
+3. TRADEMARKS
+
+"StemJSON", "StemRuntimeSDK", "StemRuntime", and the StemJSON logo are trademarks of
+Vasyl Krychun. Use of these marks is governed by the Trademark Usage
+Policy (TRADEMARK_POLICY.md). This licence does not grant any rights to
+use these trademarks except as required for reasonable and customary
+descriptive reference to the specification. In particular, you may not
+claim that your implementation IS StemJSON, is an "official" StemJSON
+product, or is endorsed or certified by the specification author, except
+under a separate trademark licence granted in writing.
+
+
+4. CONTRIBUTIONS
+
+By submitting a pull request or other contribution to this repository,
+you grant the specification author a perpetual, irrevocable, worldwide,
+royalty-free, non-exclusive, sublicensable (including through multiple
+tiers) licence, together with a licence under any patent claims you own
+or control that are necessarily infringed by the contribution, to use,
+reproduce, modify, prepare derivative works of, distribute, publicly
+display, and publicly perform the contribution as part of the StemJSON
+specification and related materials, and to sublicense the same to
+implementers under the OWFa 1.0 (or any successor open-specification
+licence that the specification author adopts for this work).
+
+You represent that the contribution is your own original work, or that
+you have the necessary rights to submit it under the terms above, and
+that submission of the contribution does not breach any obligation to a
+third party.
+
+If the specification author asks you to execute a separate Contributor
+License Agreement (including the OWFa 1.0 Contributor License Agreement,
+http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent),
+you will do so before your contribution is merged into the normative
+specification. Absent that separate CLA, the rights granted in this
+Section 4 are the only rights you grant in the contribution.
+
+
+5. NO WARRANTY
+
+THE SPECIFICATION IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+NON-INFRINGEMENT. The specification author does not warrant that the
+specification is free of errors, is fit for any particular use, or that
+implementing it will not infringe any third-party rights.
+
+
+6. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SPECIFICATION AUTHOR SHALL
+NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, LOST REVENUE,
+LOST DATA, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATING TO THIS
+LICENCE OR THE USE OF THE SPECIFICATION, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES. Nothing in this Section excludes liability
+that cannot be excluded by applicable law, including liability for
+fraud, wilful misconduct, or death or personal injury caused by
+negligence.
+
+
+7. GOVERNING LAW
+
+This licence is governed by the laws of Spain, excluding its
+conflict-of-laws rules. The OWFa 1.0, where it applies, is governed by
+its own terms. If the specification author's place of establishment
+changes (for example, on formation of a corporate licensor or on
+registration in another jurisdiction), a future version of this licence
+may designate a different governing law; any such change will apply only
+from its effective date forward and will not affect rights already
+granted under this version.
+
+
+8. SEVERABILITY
+
+If any provision of this licence is held unenforceable by a court or
+tribunal of competent jurisdiction, the remaining provisions will
+continue in full force and effect, and the unenforceable provision will
+be modified to the minimum extent necessary to make it enforceable while
+preserving its intent.
+
+
+9. NON-WAIVER
+
+The specification author's failure to enforce any provision of this
+licence, or to act on any particular breach, is not a waiver of any
+future right to enforce that provision or to act on any other breach.

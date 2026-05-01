@@ -1,0 +1,45 @@
+name: Improvement suggestion
+description: Suggest an addition or change for a future revision (v1.1+).
+title: "[v1.1] "
+labels: ["v1.1-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Larger proposals — new component types, significant grammar changes, breaking changes — start in **Discussions → Proposals**. Small additions can be filed here directly.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What can you not currently express in StemJSON v1.0? Be concrete — describe the JSON you'd like to write.
+    validations:
+      required: true
+  - type: textarea
+    id: current-workaround
+    attributes:
+      label: Current workaround (if any)
+      description: How do authors handle this today with v1.0? What makes that workaround unsatisfactory?
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed addition
+      description: New syntax, new component, new context key, new function, etc. Show example JSON if possible.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility
+      description: Would this be backwards-compatible with v1.0? If not, explain why a breaking change is warranted.
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways this could be solved at the language level. Why is your proposal preferable?
+    validations:
+      required: false

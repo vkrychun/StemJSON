@@ -1,0 +1,46 @@
+StemJSON
+Copyright (c) 2025-2026 Vasyl Krychun. All rights reserved.
+
+This product includes the StemJSON specification, which is licensed under
+the Open Web Foundation Agreement 1.0 (OWFa 1.0), with an additional
+attribution requirement set out in LICENSE §1.5.
+
+"StemJSON", "StemRuntimeSDK", "StemRuntime", and the StemJSON logo are trademarks of
+Vasyl Krychun. See TRADEMARK_POLICY.md for usage guidelines.
+
+---
+
+ATTRIBUTION REQUIREMENT
+
+If you distribute software that implements the StemJSON specification,
+you MUST include the following attribution in a reasonably discoverable
+location (e.g., documentation, about screen, README, or third-party
+notices):
+
+    "StemJSON specification created by Vasyl Krychun
+     https://stemjson.com"
+
+If you distribute an iOS Application built with StemRuntimeSDK under the
+freeware tier, the SDK displays a "Powered by StemJSON" notice on
+physical devices at runtime, as required by §2.2(a) of the
+StemRuntimeSDK EULA. A paid Commercial License removes that notice. The
+StemRuntimeSDK EULA does not require a separate textual attribution
+beyond the on-device notice; any additional attribution is governed by
+the order form or invoice for a specific Commercial License, if any.
+
+---
+
+SPECIFICATION AUTHOR
+
+    Vasyl Krychun
+    vkrychun@stemjson.com
+    https://stemjson.com
+
+---
+
+THIRD-PARTY NOTICES
+
+This section will list any third-party components included in the StemJSON
+tooling or reference implementations, along with their respective licenses.
+
+(None at this time.)

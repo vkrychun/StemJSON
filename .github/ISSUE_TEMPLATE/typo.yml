@@ -1,0 +1,34 @@
+name: Typo / editorial fix
+description: Spelling, grammar, broken Markdown, or a small editorial correction in the spec.
+title: "[Typo] "
+labels: ["typo"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: "`spec/v1.0.md`, `spec/v1.0-ai.md`, or another file in this repo."
+      placeholder: "spec/v1.0.md"
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Line number or section
+      placeholder: "Line 1247 / §7.12"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      render: markdown
+    validations:
+      required: true
