@@ -20,7 +20,7 @@ https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-
 Under the OWFa 1.0, the specification author grants any implementer a
 royalty-free, worldwide, non-exclusive, non-sublicensable copyright
 licence and a royalty-free, worldwide, non-exclusive, non-sublicensable
-patent licence (limited to Necessary Claims as defined in the OWFa 1.0),
+patent licence (limited to Granted Claims as defined in the OWFa 1.0),
 subject to the terms of the OWFa 1.0.
 
 In plain language, this means:
@@ -65,20 +65,19 @@ The StemRuntimeSDK is NOT covered by this licence.
 The StemRuntimeSDK EULA is published at
 https://github.com/vkrychun/stem-runtime-swift/blob/main/LICENSE
 (the file named LICENSE in the stem-runtime-swift repository). A
-summary is available at https://stemjson.com/sdk/license when that
-page is live.
+summary is available at https://stemjson.com/stemruntime/license/.
 
 
 3. TRADEMARKS
 
-"StemJSON", "StemRuntimeSDK", "StemRuntime", and the StemJSON logo are trademarks of
-Vasyl Krychun. Use of these marks is governed by the Trademark Usage
-Policy (TRADEMARK_POLICY.md). This licence does not grant any rights to
-use these trademarks except as required for reasonable and customary
-descriptive reference to the specification. In particular, you may not
-claim that your implementation IS StemJSON, is an "official" StemJSON
-product, or is endorsed or certified by the specification author, except
-under a separate trademark licence granted in writing.
+Use of the StemJSON™, StemRuntimeSDK™, StemRuntime™, and StemJSON
+logo marks is governed by the Trademark Usage Policy
+(TRADEMARK_POLICY.md). This licence does not grant any rights to use
+these marks except as required for reasonable and customary
+descriptive reference to the specification. In particular, you may
+not claim that your implementation IS StemJSON, is an "official"
+StemJSON product, or is endorsed or certified by the specification
+author, except under a separate trademark licence granted in writing.
 
 
 4. CONTRIBUTIONS
