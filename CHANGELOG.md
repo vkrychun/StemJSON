@@ -8,6 +8,15 @@ specification, `MAJOR.MINOR.PATCH` means: **MAJOR** — breaking changes to
 the normative surface; **MINOR** — backwards-compatible additions;
 **PATCH** — editorial fixes (typos, clarifications, non-normative rewording).
 
+## [1.0.1] — 2026-06-01
+
+Editorial clarifications and one new appendix. No breaking changes; modules targeting `1.0` are unaffected.
+
+- Clarified state propagation (a `state` action's write does not propagate through an action chain) and cross-module context inheritance.
+- Clarified expression and date-casting rules; tightened the closed color list; added anti-pattern callouts.
+- Documented the `photos.read` return contract (always an array) and the `map` position/region shape.
+- Added Appendix C — common iOS/SwiftUI assumptions that do not hold in StemJSON.
+
 ## [1.0.0] — 2026-04-24
 
 Initial release.

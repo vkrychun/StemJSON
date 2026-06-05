@@ -14,7 +14,7 @@ This repository hosts the normative specification, trademark policy, and brand a
 
 | Edition | File | Use |
 |---|---|---|
-| Full specification (human-readable) | [`spec/v1.0.md`](spec/v1.0.md) | The authoritative normative document. ~3100 lines with prose, rationale, and worked examples. |
+| Full specification (human-readable) | [`spec/v1.0.md`](spec/v1.0.md) | The authoritative normative document — prose, rationale, and worked examples. |
 | LLM reference (condensed) | [`spec/v1.0-ai.md`](spec/v1.0-ai.md) | Same normative surface, optimised for AI prompt use. Load this when instructing a language model to generate StemJSON. |
 
 Both editions cover the same v1.0 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
