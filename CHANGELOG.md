@@ -11,9 +11,9 @@ the normative surface; **MINOR** — backwards-compatible additions;
 ## [1.1.0] — 2026-07-02
 
 Minor version: backwards-compatible language additions (`switch()`,
-`random()` / `range()`, and the collection functions), plus editorial
-clarifications. Modules targeting `1.0` are unaffected; a module that uses a
-1.1 function SHOULD declare `"version": "1.1"`.
+`random()` / `range()`, the collection functions, and the `ai` action), plus
+editorial clarifications. Modules targeting `1.0` are unaffected; a module
+that uses a 1.1 feature SHOULD declare `"version": "1.1"`.
 
 Added:
 
@@ -36,6 +36,15 @@ Added:
   a new value. Positional array editing is the missing piece for piece-moving board
   games and index-addressed grids; appending and dict-merge already exist via `+`.
   *(Runtime support lands in stem-runtime 1.1.0.)*
+
+- **`ai` action** (§10.11) — calls an AI provider and binds the result into the
+  module, the foundation for AI-driven backends (a game opponent, summarization,
+  on-the-fly data shaping). The action POSTs a literal provider request `body`
+  through a host-registered `remote` repository and optionally unwraps the
+  response (`responsePath` plus a default `parseJson` JSON-parse), so the chained
+  `@{id}` is the clean answer. Provider-agnostic: the model, prompt, and response
+  schema live in `body`; the API key is injected by the host repository's auth
+  interceptor, never in JSON. *(Runtime support lands in stem-runtime 1.1.0.)*
 
 Clarified (editorial; runtime behavior unchanged):
 
