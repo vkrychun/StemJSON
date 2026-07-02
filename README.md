@@ -14,10 +14,12 @@ This repository hosts the normative specification, trademark policy, and brand a
 
 | Edition | File | Use |
 |---|---|---|
-| Full specification (human-readable) | [`spec/v1.0.md`](spec/v1.0.md) | The authoritative normative document — prose, rationale, and worked examples. |
-| LLM reference (condensed) | [`spec/v1.0-ai.md`](spec/v1.0-ai.md) | Same normative surface, optimised for AI prompt use. Load this when instructing a language model to generate StemJSON. |
+| Full specification (human-readable) | [`spec/v1.1.md`](spec/v1.1.md) | The authoritative normative document — prose, rationale, and worked examples. |
+| LLM reference (condensed) | [`spec/v1.1-ai.md`](spec/v1.1-ai.md) | Same normative surface, optimised for AI prompt use. Load this when instructing a language model to generate StemJSON. |
 
-Both editions cover the same v1.0 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
+Both editions cover the same v1.1 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
+
+Previous revisions remain available in [`spec/`](spec/): [`v1.0.md`](spec/v1.0.md) · [`v1.0-ai.md`](spec/v1.0-ai.md).
 
 ---
 
@@ -55,7 +57,7 @@ You MUST include the following attribution in a reasonably discoverable location
 
 > *"StemJSON specification created by Vasyl Krychun — https://stemjson.com"*
 
-The **StemRuntimeSDK** is a separate product distributed under its own proprietary End-User License Agreement. See [https://stemjson.com/sdk/license](https://stemjson.com/sdk/license) and the [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) repository for details.
+The **StemRuntimeSDK** is a separate product distributed under its own proprietary End-User License Agreement. See [https://stemjson.com/stemruntime/license/](https://stemjson.com/stemruntime/license/) and the [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) repository for details.
 
 ---
 
