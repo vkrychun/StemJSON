@@ -27,9 +27,17 @@ Previous revisions remain available in [`spec/`](spec/): [`v1.0.md`](spec/v1.0.m
 
 | Platform | Repository | Status |
 |---|---|---|
-| Apple (iOS, iPadOS) | [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) | Official. Native SwiftUI renderer. Proprietary binary SDK (separate license). |
+| Apple (iOS, iPadOS) | [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) | Official. Native SwiftUI renderer. Swift Package (binary XCFramework). Proprietary SDK (separate license). |
+| Android | [stem-runtime-kotlin](https://github.com/vkrychun/stem-runtime-kotlin) | Official. Native Jetpack Compose renderer. Gradle/Maven AAR — `com.stemjson:stem-runtime-sdk`, Android 7.0 (API 24)+. Proprietary SDK (separate license). |
 
-Reference demos: [stem-examples-swift](https://github.com/vkrychun/stem-examples-swift) — runnable iOS apps whose features are authored in StemJSON and rendered via StemRuntimeSDK.
+Both official runtimes implement the v1.1 normative language. The built-in set of repository and service kinds is runtime-specific — see §5.3 and §5.5 of the spec, and each runtime's README for what it ships versus what the host application registers.
+
+Reference demos — runnable apps whose features are authored in StemJSON and rendered via StemRuntimeSDK:
+
+| Platform | Repository |
+|---|---|
+| iOS | [stem-examples-swift](https://github.com/vkrychun/stem-examples-swift) — SwiftUI and UIKit hosts, plus a mixed native/StemJSON screen with bidirectional state. |
+| Android | [stem-examples-kotlin](https://github.com/vkrychun/stem-examples-kotlin) — Jetpack Compose hosts, plus a mixed native/StemJSON screen with bidirectional state. |
 
 Independent implementations on other platforms are permitted under OWFa 1.0.
 
@@ -57,7 +65,7 @@ You MUST include the following attribution in a reasonably discoverable location
 
 > *"StemJSON specification created by Vasyl Krychun — https://stemjson.com"*
 
-The **StemRuntimeSDK** is a separate product distributed under its own proprietary End-User License Agreement. See [https://stemjson.com/stemruntime/license/](https://stemjson.com/stemruntime/license/) and the [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) repository for details.
+The **StemRuntimeSDK** is a separate product distributed under its own proprietary End-User License Agreement. See [https://stemjson.com/stemruntime/license/](https://stemjson.com/stemruntime/license/) and the [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) / [stem-runtime-kotlin](https://github.com/vkrychun/stem-runtime-kotlin) repositories for details.
 
 ---
 
