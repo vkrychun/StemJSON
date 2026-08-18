@@ -43,6 +43,18 @@ Independent implementations on other platforms are permitted under OWFa 1.0.
 
 ---
 
+## MCP server
+
+A hosted MCP server lets any MCP client — Claude Code, Claude, ChatGPT, Cursor — author StemJSON from chat: scaffold, spec lookup, validation, and submission that returns a share link opening natively on a phone. Free with your existing AI subscription; GitHub sign-in, no API key.
+
+```bash
+claude mcp add --transport http stemjson https://stem-cloud-api-183076946186.europe-west1.run.app/mcp
+```
+
+Setup for other clients: [stemjson.com/mcp](https://stemjson.com/mcp/)
+
+---
+
 ## Support and feedback
 
 | For | Channel |
