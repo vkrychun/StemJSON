@@ -8,6 +8,96 @@ specification, `MAJOR.MINOR.PATCH` means: **MAJOR** — breaking changes to
 the normative surface; **MINOR** — backwards-compatible additions;
 **PATCH** — editorial fixes (typos, clarifications, non-normative rewording).
 
+## [1.2.0] — 2026-10-08
+
+Minor version: backwards-compatible language additions, plus editorial
+clarifications. Modules targeting `1.1` are unaffected; a module that uses a
+1.2 feature SHOULD declare `"version": "1.2"`.
+
+Added:
+
+- **`slice()`, array `prefix()` / `suffix()`, and math functions** (§8.6) —
+  `slice(array, start, end?)` returns the elements from `start` up to but not
+  including `end` (negative indices count from the tail, out-of-range bounds are
+  clamped), `prefix` / `suffix` on an array return its first / last `n`
+  elements, and `pow(base, exponent)`, `sqrt(x)`, `log(x, base?)` (natural
+  logarithm by default) return a double, or none for a non-numeric argument,
+  an undefined result, or overflow. *(Runtime support lands in stem-runtime 1.2.0.)*
+
+- **`onChange` with several observers** (§9.2) — an array of
+  `{ "observed", "actions" }` objects registers one observer per element; an
+  array of bare actions never fired and is now reported by validation, as is
+  mixing the two shapes. *(Runtime support lands in stem-runtime 1.2.0.)*
+
+- **`navigate` operation `open`** (§10.8) — hands `input.url` (`https://`,
+  `http://`, `mailto:`, `tel:`) to the platform's default handler outside the
+  module; `output.failure` fires when the URL is invalid or no handler exists,
+  and no `navigation` ancestor is required. *(Runtime support lands in
+  stem-runtime 1.2.0.)*
+
+- **`chart` component** (§4.2, §7.28) — plots an array of dictionaries through
+  one or more series (`bar`, `line`, `area`, `point`, `pie`) that name the `x`
+  and `y` fields of each element; all series share axes whose type follows the
+  data or an explicit `type`, `_xAxis` / `_yAxis` set title and bounds, and `style.chart` sets legend,
+  grid lines, animation and palette. Chart chrome is platform-native.
+  *(Runtime support lands in stem-runtime 1.2.0.)*
+
+- **`web` component** (§4.2, §7.29) — embeds a web page from an `https://`,
+  `http://` or `file://` source, with `_allowsNavigation` and `_scrollEnabled`
+  on the context and `javaScript` in `style.web`. *(Runtime support lands in
+  stem-runtime 1.2.0.)*
+
+- **Forward-compatibility contract** (§18.2) — a runtime degrades every
+  construct introduced by a later minor revision (a component type, an event
+  name, an action kind, a `navigate` operation, an expression function, a
+  dependency kind) to a non-blocking warning instead of
+  failing validation or decoding: an unrecognised `navigate` operation completes
+  through `output.failure`, an unrecognised function evaluates to none, an
+  unrecognised component renders the placeholder with its `children`, and an
+  unrecognised dependency kind is omitted with a warning. §18.1 adds that a
+  host rendering modules from sources it does not control SHOULD compare the
+  module's `version` with the runtime's supported revision before rendering.
+  *(Runtime support lands in stem-runtime 1.2.0.)*
+  Degraded rendering is documented as a safety net, not a compatibility promise: hosts SHOULD check `version` and refuse or warn (§18.1, §18.2).
+  Runtimes SHOULD offer a strict mode that rejects higher-minor modules outright.
+
+Changed:
+
+- **`navigate` operation `push` runs `output.failure`** (§10.8) — when its
+  source is missing or cannot be loaded as a module, no screen is pushed and
+  `output.failure` fires. *(Runtime support lands in stem-runtime 1.2.0.)*
+
+- **`image` `_placeholder`** (§4.2) — shown when the load fails; while the
+  picture loads, the runtime shows its loading state. *(Runtime support lands
+  in stem-runtime 1.2.0.)*
+
+Clarified (editorial; runtime behavior unchanged):
+
+- **Repository and service kinds are open** (§5.3, §5.5). A runtime resolves a
+  kind against a host-populated registry; a listed kind means the language
+  defines its contract, not that every runtime ships it. `firebase` and `ai`
+  are not built into either official runtime — the `ai` kind is host-provided.
+- **Storage partition** (§5.3). A host MAY pass a storage namespace when it
+  validates a module; `local` and `secured` stores open inside it. Without one,
+  stores are keyed by repository id alone and shared by every un-namespaced
+  module, so hosts rendering more than one module SHOULD pass a stable
+  namespace per module.
+- **One list per enumeration** (§2, Appendix B). The glossary rows for
+  Repository and Style now point at §5.3 and §7 instead of repeating the
+  repository-kind and style-domain lists.
+- **Conformance tables** (§17.1, §17.2). `interval` and `ai` are listed among
+  the core action kinds; executing `ai` depends on a `remote` repository or a
+  host-provided `ai` repository.
+- **`dynamic` laziness** (§4.1, §4.6). A `dynamic` is rendered lazily only as a
+  direct child of `list`, or of a `vstack` / `hstack` with `_lazy: true` that is
+  itself a direct child of a same-axis `scroll`; any other placement — a plain
+  stack, a `zstack`, a `conditional` between the container and the `dynamic` —
+  instantiates every row eagerly, and a remote-fed collection MUST sit in a
+  lazy placement.
+- **`style.picker` and `style.datePicker` take a bare string** (§7.14, §7.20).
+  Both runtimes read the enum value directly; the dictionary form shown for
+  `datePicker` was never honoured.
+
 ## [1.1.0] — 2026-07-02
 
 Minor version: backwards-compatible language additions (`switch()`,

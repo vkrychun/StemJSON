@@ -14,12 +14,12 @@ This repository hosts the normative specification, trademark policy, and brand a
 
 | Edition | File | Use |
 |---|---|---|
-| Full specification (human-readable) | [`spec/v1.1.md`](spec/v1.1.md) | The authoritative normative document — prose, rationale, and worked examples. |
-| LLM reference (condensed) | [`spec/v1.1-ai.md`](spec/v1.1-ai.md) | Same normative surface, optimised for AI prompt use. Load this when instructing a language model to generate StemJSON. |
+| Full specification (human-readable) | [`spec/v1.2.md`](spec/v1.2.md) | The authoritative normative document — prose, rationale, and worked examples. |
+| LLM reference (condensed) | [`spec/v1.2-ai.md`](spec/v1.2-ai.md) | Same normative surface, optimised for AI prompt use. Load this when instructing a language model to generate StemJSON. |
 
-Both editions cover the same v1.1 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
+Both editions cover the same v1.2 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
 
-Previous revisions remain available in [`spec/`](spec/): [`v1.0.md`](spec/v1.0.md) · [`v1.0-ai.md`](spec/v1.0-ai.md).
+Previous revisions remain available in [`spec/`](spec/): [`v1.1.md`](spec/v1.1.md) · [`v1.1-ai.md`](spec/v1.1-ai.md) · [`v1.0.md`](spec/v1.0.md) · [`v1.0-ai.md`](spec/v1.0-ai.md).
 
 ---
 
@@ -30,7 +30,7 @@ Previous revisions remain available in [`spec/`](spec/): [`v1.0.md`](spec/v1.0.m
 | Apple (iOS, iPadOS) | [stem-runtime-swift](https://github.com/vkrychun/stem-runtime-swift) | Official. Native SwiftUI renderer. Swift Package (binary XCFramework). Proprietary SDK (separate license). |
 | Android | [stem-runtime-kotlin](https://github.com/vkrychun/stem-runtime-kotlin) | Official. Native Jetpack Compose renderer. Gradle/Maven AAR — `com.stemjson:stem-runtime-sdk`, Android 7.0 (API 24)+. Proprietary SDK (separate license). |
 
-Both official runtimes implement the v1.1 normative language. The built-in set of repository and service kinds is runtime-specific — see §5.3 and §5.5 of the spec, and each runtime's README for what it ships versus what the host application registers.
+Both official runtimes implement the v1.2 normative language. The built-in set of repository and service kinds is runtime-specific — see §5.3 and §5.5 of the spec, and each runtime's README for what it ships versus what the host application registers.
 
 Reference demos — runnable apps whose features are authored in StemJSON and rendered via StemRuntimeSDK:
 
@@ -60,7 +60,7 @@ Setup for other clients: [stemjson.com/mcp](https://stemjson.com/mcp/)
 | For | Channel |
 |---|---|
 | Spec clarifications (ambiguous wording, apparent contradictions) | Issues → *Spec clarification* template |
-| Improvement suggestions for v1.1+ | Discussions → *Proposals*, or Issues → *Improvement suggestion* |
+| Improvement suggestions for v1.2+ | Discussions → *Proposals*, or Issues → *Improvement suggestion* |
 | Typos / editorial fixes | Issues → *Typo* template |
 | Questions about the spec | Discussions → Q&A |
 | Licensing, commercial enquiries, trademark permission | vkrychun@stemjson.com |
