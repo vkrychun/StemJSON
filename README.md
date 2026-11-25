@@ -8,13 +8,11 @@
 
 StemJSON, originated and authored by **Vasyl Krychun**, is a declarative language expressed in plain JSON. A module describes screens, UI trees, reactive state, and interaction flows; a runtime validates it and renders it as native UI. Modules can be authored by developers or AI systems and delivered bundled in an app or from a backend at runtime.
 
-This repository hosts the normative specification, trademark policy, and brand assets. The language is licensed under the **Open Web Foundation Agreement 1.0 (OWFa 1.0)**: anyone may implement it in any language or on any platform, subject to the attribution requirement in [LICENSE §1.5](LICENSE).
-
 ---
 
 ## Make your first module
 
-Nobody writes StemJSON by hand. Pick a route:
+You don't have to write StemJSON by hand. Pick a route:
 
 **From your AI chat.** A hosted MCP server lets any MCP client (Claude Code, Claude, ChatGPT, Cursor) author StemJSON from chat: scaffold, spec lookup, validation, and submission that returns a share link opening natively on a phone. Free with your existing AI subscription; GitHub sign-in, no API key.
 
@@ -39,7 +37,7 @@ Setup for other clients: [stemjson.com/mcp](https://stemjson.com/mcp/)
 
 Both runtimes implement the v1.2 language. The built-in repository and service kinds are runtime-specific; see §5.3 and §5.5 of the spec and each runtime's README.
 
-Two common uses: server-driven UI (ship modules from your backend without an app release) and AI-generated features inside an existing app.
+Two common uses: server-driven UI (deliver modules from your backend) and AI-generated features inside an existing app.
 
 Runnable examples, with features authored in StemJSON:
 
@@ -54,6 +52,8 @@ Independent implementations on other platforms are permitted under OWFa 1.0.
 
 ## Specification
 
+This repository hosts the normative specification, trademark policy, and brand assets. The language is licensed under the **Open Web Foundation Agreement 1.0 (OWFa 1.0)**: anyone may implement it in any language or on any platform, subject to the attribution requirement in [LICENSE §1.5](LICENSE).
+
 | Edition | File | Use |
 |---|---|---|
 | Full specification (human-readable) | [`spec/v1.2.md`](spec/v1.2.md) | The authoritative normative document — prose, rationale, and worked examples. |
@@ -62,8 +62,6 @@ Independent implementations on other platforms are permitted under OWFa 1.0.
 Both editions cover the same v1.2 normative language. The LLM edition is token-optimised — no prose, just the schemas, enums, and grammar tables a model needs to emit valid StemJSON.
 
 Previous revisions remain available in [`spec/`](spec/): [`v1.1.md`](spec/v1.1.md) · [`v1.1-ai.md`](spec/v1.1-ai.md) · [`v1.0.md`](spec/v1.0.md) · [`v1.0-ai.md`](spec/v1.0-ai.md).
-
----
 
 ---
 
